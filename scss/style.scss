@@ -1,3 +1,6 @@
+@import "./partials/queries";
+@import "./partials/variables";
+
 /*encabezado*/
 body{
     margin: 0;
@@ -29,33 +32,34 @@ main.home{
 .titulohomeA{
     padding-top: 60px;
     padding-bottom: 10px;
-    font-size: 50px;
+    font-size: $FontSizeTitulos;
 }
 .parrafohomeA{
     padding-left: 770px;
     width: 59%;
-    font-size: 20px;
+    font-size: $FontSizeTexto;
+    text-shadow: rgb(20, 20, 20);
 }
 .titulohomeB{
     padding-top: 50px;
     padding-bottom: 10px;
-    font-size: 50px;
+    font-size: $FontSizeTitulos;
 }
 .parrafohomeB{
     padding-left: 770px;
     width: 59%;
-    font-size: 20px;
+    font-size: $FontSizeTexto;
     text-shadow: rgb(20, 20, 20);
 }
 .titulohomeC{
     padding-top: 50px;
     padding-bottom: 10px;
-    font-size: 50px;
+    font-size: $FontSizeTitulos;
 }
 .parrafohomeC{
     padding-left: 770px;
     width: 59%;
-    font-size: 20px;
+    font-size: $FontSizeTexto;
     text-shadow: rgb(20, 20, 20);
 }
 /*biografia*/
@@ -65,40 +69,36 @@ main.biografia{
         text-align: center;
         margin-top: 50px;
         margin-bottom: 30px;
-        font-size: 50px;
+        font-size: $FontSizeTitulos;}
+    p.b{
+        text-align: center;
+        margin-left: 200px;
+        margin-right: 200px;}
+    p{
+        font-size: $FontSizeTextochico;
     }
-}
-main.biografia p.b{
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-main.biografia .grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    /* margin-top: 60px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 40px; */
-    margin: 80px 150px 40px 150px;
-    column-gap: 120px;
-    text-align: center;
-}
-main.biografia h2{
-    text-align: center;
-    margin-bottom: 30px;
-}
-main.biografia img{
-    margin-top: 30px;
-    .br{
-        margin-left: 40px;
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 80px 150px 40px 150px;
+        column-gap: 120px;
+        text-align: center;}
+    h2{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: $FontSizeSubtitulos;}
+        img{
+            margin-top: 30px;
+            .br{
+                margin-left: 40px;
+        }
     }
 }
 /*canciones*/
 main.canciones h1{
     text-align: center;
-    font-size: 50px;
+    font-size: $FontSizeTitulos;
     color: white;
     text-shadow: 0 0 10px black;
     padding-top: 50px;
@@ -113,36 +113,29 @@ main.albumes{
     color: white;
     div{
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 30px;}
+    h2{
+        margin-bottom: 50px;
+        font-size: $FontSizeSubtitulos;}
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0px;
+        .izq{
+            text-align: left;
+            .der{
+                text-align: right;}}}
+    li{
+        margin-bottom: 10px;
+        font-size: $FontSizeTexto;}
+    h1{
+        color: white;
+        font-size: $FontSizeSupertitulos;
+        text-shadow: 0 0 10px black;
+        padding-top: 10px;}
+    img{
+        height: 400px;
     }
-}
-main.albumes h2{
-    margin-bottom: 50px;
-    font-size: 40px;
-}
-main.albumes ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0px;
-    .izq{
-        text-align: left;
-        .der{
-            text-align: right;
-        }
-    }
-}
-main.albumes li{
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-main.albumes h1{
-    color: white;
-    font-size: 70px;
-    text-shadow: 0 0 10px black;
-    padding-top: 10 px;
-}
-main.albumes img{
-    height: 400px;
 }
 /*noticias*/
 main.noticias{
@@ -154,20 +147,18 @@ main.noticias{
     background-size: cover;
     .titulonoticias{
         text-shadow: 0 0 10px black;
-        font-size: 50px;
-        padding-top: 50px;
-    }
-}
-.parrafonoticias{
-    padding-top: 40px;
-    font-size: 20px;
-    text-shadow: 0 0 10px #000000;
-}
-.formularionoticias{
-    padding-top: 150px;
-    font-size: 20px;
-    form{
-        margin-top: 30px;
+        font-size: $FontSizeTitulos;
+        padding-top: 50px;}
+    .parrafonoticias{
+        padding-top: 40px;
+        font-size: 20px;
+        text-shadow: 0 0 10px #000000;}
+    .formularionoticias{
+        padding-top: 150px;
+        font-size: 20px;
+        form{
+            margin-top: 30px;
+        }
     }
 }
 /*pie de pagina*/
@@ -180,11 +171,13 @@ footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
     p{
-        margin-bottom: 10px;
+        margin-bottom: 10px;}
+    i{
+        font-size: 40px;
+        letter-spacing: 10px;
+        color: rgb(255, 255, 255);
+        &:hover{
+            color: rgb(99, 99, 99)
+        }
     }
-}
-footer i{
-    font-size: 40px;
-    letter-spacing: 10px;
-    color: rgb(255, 255, 255);
 }

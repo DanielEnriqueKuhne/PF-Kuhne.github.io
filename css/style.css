@@ -1,3 +1,16 @@
+@media (max-width: 767px) {
+  main.albumes ul.izq {
+    text-align: center;
+  }
+  main.albumes ul.der {
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
+  header li {
+    font-size: 10px;
+  }
+}
 /*encabezado*/
 body {
   margin: 0;
@@ -38,6 +51,7 @@ main.home {
   padding-left: 770px;
   width: 59%;
   font-size: 20px;
+  text-shadow: rgb(20, 20, 20);
 }
 
 .titulohomeB {
@@ -76,31 +90,27 @@ main.biografia h1 {
   margin-bottom: 30px;
   font-size: 50px;
 }
-
 main.biografia p.b {
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
-
+main.biografia p {
+  font-size: 16px;
+}
 main.biografia .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  /* margin-top: 60px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 40px; */
   margin: 80px 150px 40px 150px;
   column-gap: 120px;
   text-align: center;
 }
-
 main.biografia h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 40px;
 }
-
 main.biografia img {
   margin-top: 30px;
 }
@@ -131,12 +141,10 @@ main.albumes div {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-
 main.albumes h2 {
   margin-bottom: 50px;
   font-size: 40px;
 }
-
 main.albumes ul {
   list-style-type: none;
   padding: 0;
@@ -148,19 +156,16 @@ main.albumes ul .izq {
 main.albumes ul .izq .der {
   text-align: right;
 }
-
 main.albumes li {
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
-
 main.albumes h1 {
   color: white;
-  font-size: 70px;
+  font-size: 60px;
   text-shadow: 0 0 10px black;
-  padding-top: 10 px;
+  padding-top: 10px;
 }
-
 main.albumes img {
   height: 400px;
 }
@@ -179,18 +184,16 @@ main.noticias .titulonoticias {
   font-size: 50px;
   padding-top: 50px;
 }
-
-.parrafonoticias {
+main.noticias .parrafonoticias {
   padding-top: 40px;
   font-size: 20px;
   text-shadow: 0 0 10px #000000;
 }
-
-.formularionoticias {
+main.noticias .formularionoticias {
   padding-top: 150px;
   font-size: 20px;
 }
-.formularionoticias form {
+main.noticias .formularionoticias form {
   margin-top: 30px;
 }
 
@@ -207,11 +210,13 @@ footer {
 footer p {
   margin-bottom: 10px;
 }
-
 footer i {
   font-size: 40px;
   letter-spacing: 10px;
   color: rgb(255, 255, 255);
+}
+footer i:hover {
+  color: rgb(99, 99, 99);
 }
 
 /*# sourceMappingURL=style.css.map */

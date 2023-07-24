@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+    main.albumes ul.izq{
+        text-align: center;
+    }
+    main.albumes ul.der{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    header li{
+        font-size: 10px;
+    }
+}
