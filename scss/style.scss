@@ -25,38 +25,38 @@ main.home{
     background-size: cover;
     justify-content: center;
     text-shadow: 0 0 5px #000000;
-    .titulohomeA{
-        padding-top: 60px;
-        padding-bottom: 10px;
-        font-size: 50px;
-        .parrafohomeA{
-            padding-left: 770px;
-            width: 59%;
-            font-size: 20px;
-            .titulohomeB{
-                padding-top: 50px;
-                padding-bottom: 10px;
-                font-size: 50px;
-                .parrafohomeB{
-                    padding-left: 770px;
-                    width: 59%;
-                    font-size: 20px;
-                    text-shadow: rgb(20, 20, 20);
-                    .titulohomeC{
-                        padding-top: 50px;
-                        padding-bottom: 10px;
-                        font-size: 50px;
-                        .parrafohomeC{
-                            padding-left: 770px;
-                            width: 59%;
-                            font-size: 20px;
-                            text-shadow: rgb(20, 20, 20);
-                        }
-                    }
-                }
-            }
-        }
-    }
+}
+.titulohomeA{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+.parrafohomeA{
+    padding-left: 770px;
+    width: 59%;
+    font-size: 20px;
+}
+.titulohomeB{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+.parrafohomeB{
+    padding-left: 770px;
+    width: 59%;
+    font-size: 20px;
+    text-shadow: rgb(20, 20, 20);
+}
+.titulohomeC{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+.parrafohomeC{
+    padding-left: 770px;
+    width: 59%;
+    font-size: 20px;
+    text-shadow: rgb(20, 20, 20);
 }
 /*biografia*/
 main.biografia{
@@ -143,4 +143,31 @@ main.albumes h1{
 }
 main.albumes img{
     height: 400px;
+}
+/*noticias*/
+main.noticias{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0 0 10px #000000;
+    width: 100%;
+    height: 1080px;
+    background-size: cover;
+    .titulonoticias{
+        text-shadow: 0 0 10px black;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+}
+.parrafonoticias{
+    padding-top: 40px;
+    font-size: 20px;
+    text-shadow: 0 0 10px #000000;
+}
+.formularionoticias{
+    padding-top: 150px;
+    font-size: 20px;
+    form{
+        margin-top: 30px;
+    }
 }
