@@ -145,6 +145,9 @@ main.noticias{
     width: 100%;
     height: 1080px;
     background-size: cover;
+    span{
+        font-size: $FontSizeTextogrande;
+        text-shadow: 0 0 5px rgb(255, 255, 255)}
     .titulonoticias{
         text-shadow: 0 0 10px black;
         font-size: $FontSizeTitulos;

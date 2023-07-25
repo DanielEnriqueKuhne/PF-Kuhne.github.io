@@ -168,6 +168,10 @@ main.noticias {
   height: 1080px;
   background-size: cover;
 }
+main.noticias span {
+  font-size: 25px;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+}
 main.noticias .titulonoticias {
   text-shadow: 0 0 10px black;
   font-size: 50px;
