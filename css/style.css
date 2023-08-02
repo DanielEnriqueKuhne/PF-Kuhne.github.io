@@ -30,43 +30,21 @@ main.home {
   text-shadow: 0 0 5px #000000;
 }
 
-.titulohomeA {
+.titulohomeA, .titulohomeBC {
   padding-top: 60px;
   padding-bottom: 10px;
   font-size: 50px;
 }
 
-.parrafohomeA {
+.parrafohome {
   padding-left: 770px;
   width: 59%;
   font-size: 20px;
   text-shadow: rgb(20, 20, 20);
 }
 
-.titulohomeB {
+.titulohomeBC {
   padding-top: 50px;
-  padding-bottom: 10px;
-  font-size: 50px;
-}
-
-.parrafohomeB {
-  padding-left: 770px;
-  width: 59%;
-  font-size: 20px;
-  text-shadow: rgb(20, 20, 20);
-}
-
-.titulohomeC {
-  padding-top: 50px;
-  padding-bottom: 10px;
-  font-size: 50px;
-}
-
-.parrafohomeC {
-  padding-left: 770px;
-  width: 59%;
-  font-size: 20px;
-  text-shadow: rgb(20, 20, 20);
 }
 
 /*biografia*/
@@ -182,18 +160,17 @@ main.noticias span {
   text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 main.noticias .titulonoticias {
-  text-shadow: 0 0 10px black;
-  font-size: 50px;
   padding-top: 50px;
+  font-size: 50px;
+  text-shadow: 0 0 10px black;
 }
-main.noticias .parrafonoticias {
+main.noticias .parrafonoticias, main.noticias .formularionoticias {
   padding-top: 40px;
   font-size: 20px;
   text-shadow: 0 0 10px #000000;
 }
 main.noticias .formularionoticias {
   padding-top: 150px;
-  font-size: 20px;
 }
 main.noticias .formularionoticias form {
   margin-top: 30px;

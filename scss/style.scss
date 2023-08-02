@@ -24,11 +24,8 @@ nav {
 main.home{
     @include flexible( center , cover , center);
     color: rgb(240, 239, 239);
-    // text-align: center;
     height: 1080px;
     width: 100%;
-    // background-size: cover;
-    // justify-content: center;
     text-shadow: 0 0 5px #000000;
 }
 .titulohomeA{
@@ -36,33 +33,15 @@ main.home{
     padding-bottom: 10px;
     font-size: $FontSizeTitulos;
 }
-.parrafohomeA{
+.parrafohome{
     padding-left: 770px;
     width: 59%;
     font-size: $FontSizeTexto;
     text-shadow: rgb(20, 20, 20);
 }
-.titulohomeB{
+.titulohomeBC{
+    @extend .titulohomeA;
     padding-top: 50px;
-    padding-bottom: 10px;
-    font-size: $FontSizeTitulos;
-}
-.parrafohomeB{
-    padding-left: 770px;
-    width: 59%;
-    font-size: $FontSizeTexto;
-    text-shadow: rgb(20, 20, 20);
-}
-.titulohomeC{
-    padding-top: 50px;
-    padding-bottom: 10px;
-    font-size: $FontSizeTitulos;
-}
-.parrafohomeC{
-    padding-left: 770px;
-    width: 59%;
-    font-size: $FontSizeTexto;
-    text-shadow: rgb(20, 20, 20);
 }
 /*biografia*/
 main.biografia{
@@ -149,16 +128,16 @@ main.noticias{
         font-size: $FontSizeTextogrande;
         text-shadow: 0 0 5px rgb(255, 255, 255)}
     .titulonoticias{
-        text-shadow: 0 0 10px black;
+        padding-top: 50px;
         font-size: $FontSizeTitulos;
-        padding-top: 50px;}
+        text-shadow: 0 0 10px black;}
     .parrafonoticias{
         padding-top: 40px;
         font-size: $FontSizeTexto;
         text-shadow: 0 0 10px #000000;}
     .formularionoticias{
+        @extend .parrafonoticias;
         padding-top: 150px;
-        font-size: $FontSizeTexto;
         form{
             margin-top: 30px;
         }
