@@ -1,4 +1,5 @@
 @import "./partials/variables";
+@import "./partials/mixins";
 
 /*encabezado*/
 body{
@@ -21,12 +22,13 @@ nav {
 
 /*home*/
 main.home{
+    @include flexible( center , cover , center);
     color: rgb(240, 239, 239);
-    text-align: center;
+    // text-align: center;
     height: 1080px;
     width: 100%;
-    background-size: cover;
-    justify-content: center;
+    // background-size: cover;
+    // justify-content: center;
     text-shadow: 0 0 5px #000000;
 }
 .titulohomeA{
@@ -66,12 +68,12 @@ main.home{
 main.biografia{
     color: #fff;
     h1{
-        text-align: center;
+        @include flexible( center , auto , center );
         margin-top: 50px;
         margin-bottom: 30px;
         font-size: $FontSizeTitulos;}
     p.b{
-        text-align: center;
+        @include flexible( center , auto , center );
         margin-left: 200px;
         margin-right: 200px;}
     p{
@@ -85,7 +87,7 @@ main.biografia{
         column-gap: 120px;
         text-align: center;}
     h2{
-        text-align: center;
+        @include flexible( center , auto , center );
         margin-bottom: 30px;
         font-size: $FontSizeSubtitulos;}
         img{
@@ -97,7 +99,7 @@ main.biografia{
 }
 /*canciones*/
 main.canciones h1{
-    text-align: center;
+    @include flexible( center , auto , center );
     font-size: $FontSizeTitulos;
     color: white;
     text-shadow: 0 0 10px black;
@@ -139,11 +141,10 @@ main.albumes{
 /*noticias*/
 main.noticias{
     color: white;
-    text-align: center;
+    @include flexible( center , auto , center );
     text-shadow: 0 0 10px #000000;
     width: 100%;
     height: 1080px;
-    background-size: cover;
     span{
         font-size: $FontSizeTextogrande;
         text-shadow: 0 0 5px rgb(255, 255, 255)}
