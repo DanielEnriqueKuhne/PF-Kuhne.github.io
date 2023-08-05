@@ -101,6 +101,8 @@ main.canciones h1 {
 iframe {
   padding-top: 20px;
   padding-bottom: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*albumes*/
@@ -206,9 +208,10 @@ footer i:hover {
     font-size: 10px;
   }
 }
-@media (min-width: 390px) {
-  .titulohome {
-    font-size: 10px;
+@media (max-width: 790px) {
+  iframe {
+    width: auto;
+    height: auto;
   }
 }
 

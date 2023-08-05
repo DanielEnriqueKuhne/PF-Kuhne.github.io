@@ -41,28 +41,6 @@ main.home{
         }
     }
 }
-// main.home{
-//     @include flexible( center , cover , center);
-//     color: rgb(240, 239, 239);
-//     height: 1080px;
-//     width: 100%;
-//     text-shadow: 0 0 5px #000000;
-// }
-// .titulohomeA{
-//     padding-top: 60px;
-//     padding-bottom: 10px;
-//     font-size: $FontSizeTitulos;
-// }
-// .parrafohome{
-//     padding-left: 770px;
-//     width: 59%;
-//     font-size: $FontSizeTexto;
-//     text-shadow: rgb(20, 20, 20);
-// }
-// .titulohomeBC{
-//     @extend .titulohomeA;
-//     padding-top: 50px;
-// }
 /*biografia*/
 main.biografia{
     color: #fff;
@@ -107,6 +85,8 @@ main.canciones h1{
     iframe{
         padding-top: 20px;
         padding-bottom: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
 }
 /*albumes*/
 main.albumes{

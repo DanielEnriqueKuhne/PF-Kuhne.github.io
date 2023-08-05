@@ -13,8 +13,9 @@
     }
 }
 
-@media (min-width: 390px){
-    .titulohome{
-        font-size: 10px
+@media (max-width: 790px) {
+    iframe{
+        width: auto;
+        height: auto;
     }
 }
