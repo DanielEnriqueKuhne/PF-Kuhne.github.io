@@ -19,3 +19,28 @@
         height: auto;
     }
 }
+
+@media (max-width: 395px) {
+    footer p{
+        font-size: $FontSizeTextochico;
+    }
+}
+
+@media (max-width: 1050px) {
+    main.albumes img{
+        width: 350px;
+        height: auto;
+    }
+}
+@media (max-width: 850px) {
+    main.albumes img{
+        width: 300px;
+        height: auto;
+    }
+}
+@media (max-width: 290px) {
+    main.albumes img{
+        width: 200px;
+        height: auto;
+    }
+}

@@ -22,6 +22,7 @@ nav span {
 /*home*/
 main.home {
   text-align: center;
+  height: auto;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -109,10 +110,6 @@ iframe {
 main.albumes {
   color: white;
 }
-main.albumes div {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
 main.albumes h2 {
   margin-bottom: 50px;
   font-size: 40px;
@@ -120,7 +117,6 @@ main.albumes h2 {
 main.albumes ul {
   list-style-type: none;
   padding: 0;
-  margin: 0px;
 }
 main.albumes ul .izq {
   text-align: left;
@@ -140,6 +136,14 @@ main.albumes h1 {
 }
 main.albumes img {
   height: 400px;
+}
+
+main.albumes .col {
+  margin-top: 100px;
+}
+
+.ultima-row {
+  margin-bottom: 100px;
 }
 
 /*noticias*/
@@ -165,6 +169,9 @@ main.noticias .parrafonoticias, main.noticias .formularionoticias {
   padding-top: 40px;
   font-size: 20px;
   text-shadow: 0 0 10px #000000;
+}
+main.noticias p {
+  padding-top: 20px;
 }
 main.noticias .formularionoticias {
   padding-top: 150px;
@@ -211,6 +218,29 @@ footer i:hover {
 @media (max-width: 790px) {
   iframe {
     width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 395px) {
+  footer p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1050px) {
+  main.albumes img {
+    width: 350px;
+    height: auto;
+  }
+}
+@media (max-width: 850px) {
+  main.albumes img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 290px) {
+  main.albumes img {
+    width: 200px;
     height: auto;
   }
 }
