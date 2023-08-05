@@ -44,35 +44,15 @@ main.home{
 }
 /*biografia*/
 main.biografia{
-    color: #fff;
-    h1{
-        @include flexible( center , auto , center );
-        margin-top: 50px;
-        margin-bottom: 30px;
-        font-size: $FontSizeTitulos;}
-    p.b{
-        @include flexible( center , auto , center );
-        margin-left: 200px;
-        margin-right: 200px;}
-    p{
-        font-size: $FontSizeTextochico;
-    }
-    .grid-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        margin: 80px 150px 40px 150px;
-        column-gap: 120px;
-        text-align: center;}
-    h2{
-        @include flexible( center , auto , center );
-        margin-bottom: 30px;
-        font-size: $FontSizeSubtitulos;}
-        img{
-            margin-top: 30px;
-            .br{
-                margin-left: 40px;
-        }
+    .row{
+        text-align: center;
+        color: rgb(240, 239, 239);
+        gap: 150px;
+        .col{
+            margin-top: 50px}
+            h1{font-size: $FontSizeTitulos; margin-bottom: 30px;}
+            h2{font-size: $FontSizeSubtitulos; margin-bottom: 30px;}
+            img{width: 100%; height: auto; margin-top: 20px}
     }
 }
 /*canciones*/
@@ -149,6 +129,7 @@ main.noticias{
 }
 /*pie de pagina*/
 footer{
+    margin-top: 70px;
     height: 110px;
     text-align: center;
     font-size: $FontSizeTexto;

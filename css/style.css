@@ -44,47 +44,26 @@ main.home .parrafohome .txthome {
 }
 
 /*biografia*/
-main.biografia {
-  color: #fff;
-}
-main.biografia h1 {
+main.biografia .row {
   text-align: center;
-  background-size: auto;
-  justify-content: center;
+  color: rgb(240, 239, 239);
+  gap: 150px;
+}
+main.biografia .row .col {
   margin-top: 50px;
-  margin-bottom: 30px;
+}
+main.biografia .row h1 {
   font-size: 50px;
-}
-main.biografia p.b {
-  text-align: center;
-  background-size: auto;
-  justify-content: center;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-main.biografia p {
-  font-size: 16px;
-}
-main.biografia .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  margin: 80px 150px 40px 150px;
-  column-gap: 120px;
-  text-align: center;
-}
-main.biografia h2 {
-  text-align: center;
-  background-size: auto;
-  justify-content: center;
   margin-bottom: 30px;
+}
+main.biografia .row h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
-main.biografia img {
-  margin-top: 30px;
-}
-main.biografia img .br {
-  margin-left: 40px;
+main.biografia .row img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
 /*canciones*/
@@ -182,6 +161,7 @@ main.noticias .formularionoticias form {
 
 /*pie de pagina*/
 footer {
+  margin-top: 70px;
   height: 110px;
   text-align: center;
   font-size: 20px;
@@ -242,6 +222,16 @@ footer i:hover {
   main.albumes img {
     width: 200px;
     height: auto;
+  }
+}
+@media (max-width: 995px) {
+  main.biografia .row {
+    gap: 50px;
+  }
+}
+@media (max-width: 767px) {
+  main.biografia .row {
+    gap: 232px;
   }
 }
 
