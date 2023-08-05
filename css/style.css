@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: radial-gradient(at center bottom, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
-  height: 100%;
+  height: auto;
 }
 
 nav {
@@ -22,29 +22,24 @@ nav span {
 /*home*/
 main.home {
   text-align: center;
-  background-size: cover;
-  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+main.home .titulohome {
+  padding-top: 60px;
+  font-size: 50px;
   color: rgb(240, 239, 239);
-  height: 1080px;
-  width: 100%;
   text-shadow: 0 0 5px #000000;
 }
-
-.titulohomeA, .titulohomeBC {
-  padding-top: 60px;
-  padding-bottom: 10px;
-  font-size: 50px;
-}
-
-.parrafohome {
-  padding-left: 770px;
-  width: 59%;
+main.home .parrafohome {
+  padding-top: 30px;
   font-size: 20px;
-  text-shadow: rgb(20, 20, 20);
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #fff;
 }
-
-.titulohomeBC {
-  padding-top: 50px;
+main.home .parrafohome .txthome {
+  padding-bottom: 50px;
 }
 
 /*biografia*/
@@ -208,6 +203,11 @@ footer i:hover {
 }
 @media (max-width: 1000px) {
   header li {
+    font-size: 10px;
+  }
+}
+@media (min-width: 390px) {
+  .titulohome {
     font-size: 10px;
   }
 }

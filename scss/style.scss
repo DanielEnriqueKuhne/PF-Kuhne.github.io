@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     background: radial-gradient(at center bottom, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
-    height: 100%;
+    height: auto;
 }
 nav {
     background-color: #000000;
@@ -22,27 +22,47 @@ nav {
 
 /*home*/
 main.home{
-    @include flexible( center , cover , center);
-    color: rgb(240, 239, 239);
-    height: 1080px;
-    width: 100%;
-    text-shadow: 0 0 5px #000000;
+    text-align: center;
+    .titulohome{
+        padding-top: 60px;
+        font-size: $FontSizeTitulos;
+        color: rgb(240, 239, 239);
+        text-shadow: 0 0 5px #000000;}
+        margin-left: 5%;
+        margin-right: 5%;
+    .parrafohome{
+        padding-top: 30px;
+        font-size: $FontSizeTexto;
+        padding-left: 20%;
+        padding-right: 20%;
+        color: #fff;
+        .txthome{
+            padding-bottom: 50px;
+        }
+    }
 }
-.titulohomeA{
-    padding-top: 60px;
-    padding-bottom: 10px;
-    font-size: $FontSizeTitulos;
-}
-.parrafohome{
-    padding-left: 770px;
-    width: 59%;
-    font-size: $FontSizeTexto;
-    text-shadow: rgb(20, 20, 20);
-}
-.titulohomeBC{
-    @extend .titulohomeA;
-    padding-top: 50px;
-}
+// main.home{
+//     @include flexible( center , cover , center);
+//     color: rgb(240, 239, 239);
+//     height: 1080px;
+//     width: 100%;
+//     text-shadow: 0 0 5px #000000;
+// }
+// .titulohomeA{
+//     padding-top: 60px;
+//     padding-bottom: 10px;
+//     font-size: $FontSizeTitulos;
+// }
+// .parrafohome{
+//     padding-left: 770px;
+//     width: 59%;
+//     font-size: $FontSizeTexto;
+//     text-shadow: rgb(20, 20, 20);
+// }
+// .titulohomeBC{
+//     @extend .titulohomeA;
+//     padding-top: 50px;
+// }
 /*biografia*/
 main.biografia{
     color: #fff;
